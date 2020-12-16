@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body style="background-color:#209DFF">
+    
+
+    <div class="container p-3 my-3 bg-dark text-white" style="background-color:#0A0E31">
+
+        <h1 id="heading" class="center">PASSWORD GENERATOR</h1>
+        <p id=para1 class=center> This generates passwords that best fits your requirement</p>
+        <br>
+
+         <!-- Display CARD -->
+        <div class="card bg-secondary text-white">
+               <div class="card-body"> 
+                    <span id="para2" class="card-body">---Display----</span>
+                     <span id="copy" style="float:right">click to copy</span>
+                </div>
+        </div>
+         
+        <br>
+         <!-- PASSWORD LENGTH-->
+          <div>Choose Password Length:  <span id="val"></span></div>
+        <div class="card bg-secondary text-white wi ">
+            
+            <form class="range-field my-4 px-2 wi d-flex">
+                <span class="font-weight-bold purple-text mr-2 mt-1">4</span>
+                <input id="myRange" class="wi" type="range"  min="4" max="100" step="1" value="10" oninput="updateLength()"/>
+                <span class="font-weight-bold purple-text ml-2 mt-1">100</span>
+            </form>
+            
+           
+        </div>
+          <br>
+          <br>
+
+        <!-- SETTINGS-->
+        <div>Generator Settings:</div>
+        <div class=" card bg-secondary text-white flex-container">
+            <div class="card-body">Uppercase:</div>
+            <label class="switch">
+                <input id="toggle1" type="checkbox" >
+                <span class="slider round"></span>
+            </label>
+        </div>
+          <br>
+        <div class="card bg-secondary text-white flex-container">
+            <div class="card-body">Include Lowercase </div>
+            <label class="switch">
+                <input id="toggle2" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+          <br>
+        <div class="card bg-secondary text-white flex-container">
+            <span class="card-body" >Include Numbers</span>
+            <label class="switch">
+                <input id="toggle3" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+          <br>
+        <div class="card bg-secondary text-white flex-container">
+            <span class="card-body">Include Symbols</span>
+            <label class="switch">
+                <input id="toggle4" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div>
+          <br>
+        <div class="card bg-secondary text-white">
+            <button type="button" class="btn btn-primary btn-lg btn-block" onclick="myFunction()">GENERATE PASSWORD</button>
+        </div>     
+        
+    </div>
+
+
+
+
+
+
+    <script src="myScript.js"></script>
+  </body>
+</html>
